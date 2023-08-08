@@ -11,7 +11,7 @@ The Distance Calculator App is a simple Android application developed using Andr
 - Android Studio: You need to have Android Studio installed on your system to open and modify the project.
 
 ## Installation
-1. Clone the repository:
+1. Clone the repository: https://github.com/Anubrata2000/Distance_Calculator.git
 2. Open the project in Android Studio.
 3. Build and run the app on an emulator or physical device.
 
