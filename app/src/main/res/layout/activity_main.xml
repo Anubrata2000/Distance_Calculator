@@ -1,111 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tv2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red"
+    android:background="#FFFF00"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/DIST"
-        android:layout_width="278dp"
-        android:layout_height="29dp"
-        android:background="@color/teal_200"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="-120dp"
+        android:layout_marginBottom="50dp"
+        android:background="#8C2EAE"
         android:text="DISTANCE CALCULATOR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.646"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
+        android:textAlignment="center"
+        android:paddingTop="5dp"
+        android:textColor="#FFCDD2"
+        android:textSize="35sp" />
 
     <EditText
         android:id="@+id/X1"
-        android:layout_width="76dp"
-        android:layout_height="49dp"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:background="#E10F20"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#090200"
+        android:textSize="20sp"
+        android:text="X1"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:background="@color/purple_500"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328"
-        tools:text="x1" />
-
-    <EditText
-        android:id="@+id/Y1"
-        android:layout_width="82dp"
-        android:layout_height="51dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:background="@color/purple_500"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.805"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.326"
-        tools:text="y1" />
+        android:layout_marginTop="-39dp" />
 
     <EditText
         android:id="@+id/X2"
-        android:layout_width="76dp"
-        android:layout_height="45dp"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:background="#E10F20"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#090200"
+        android:textSize="20sp"
+        android:text="X2"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/Y1"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:background="#E10F20"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#090200"
+        android:textSize="20sp"
+        android:text="Y1"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:background="@color/purple_500"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.187"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424"
-        tools:text="x2" />
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:id="@+id/Y2"
-        android:layout_width="83dp"
+        android:layout_width="230dp"
         android:layout_height="48dp"
+        android:background="#E10F20"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#090200"
+        android:textSize="20sp"
+        android:text="Y2"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:background="@color/purple_500"
-        app:layout_constraintBottom_toTopOf="@+id/Result"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.807"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Y1"
-        app:layout_constraintVertical_bias="0.163"
-        tools:text="y2" />
+        android:layout_marginTop="20dp" />
 
-    <TextView
-        android:id="@+id/Result"
-        android:layout_width="193dp"
-        android:layout_height="39dp"
-        android:background="@color/teal_700"
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="325dp"
+        android:layout_height="65dp"
+        android:background="#F48FB1"
         android:text="Display"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.617"
-        tools:visibility="visible" />
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0DD3EC"
+        android:onClick="Dist_calc"
         android:text="Calculate"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.792" />
+        android:textColor="#000000"
+        android:textSize="28sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
